@@ -2,10 +2,9 @@
 using namespace std;
 int main()
 {
-    // string and getline
-    string str;
-    getline(cin, str);
-    cout << str;
-    return 0;
-    
+
+    int x;
+    cin >> x;
+    cout << "YO " << x;
+      
 }

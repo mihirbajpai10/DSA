@@ -4,14 +4,14 @@ using namespace std;
 int main()
 {
     int age;
-    cin >> age; 
-    if(age >=18)
+    cin >> age;
+    if (age >=18)
     {
-        cout << "You are an adult";
+        cout << "You are an Adult!" << endl;
     }
-    else
+    else 
     {
-        cout << "You are not an adult";
+        cout << "You are not an Adult!" << endl;
     }
     return 0;
     
@@ -27,40 +27,42 @@ e. 60 to 80 - B
 f. Above 80 - A
 Write a program that takes an input of marks and prints the corresponding grade. 
 
-int main (){
+int main()
+{
     int marks;
     cin >> marks;
     if (marks < 25)
     {
-        cout << "F";
+        cout << "F" << endl;
+    }
+    else if (marks >= 25 && marks < 45)
+    {
+        cout << "E" << endl;
+    }
+    else if (marks >= 45  && marks < 50)
+    {
+        cout << "D" << endl;
+    }
+    else if (marks >= 50 && marks < 60)
+    {
+        cout << "C" << endl;
+    }
+    else if (marks >= 60 && marks < 80)
+    {
+        cout << "B" << endl;
+    }
+    else if (marks > 80 && marks <= 100)
+    {
+        cout << "A" << endl;
+    }
+    return 0;
     
-    }
-    else if (marks <= 45)
-    {
-        cout << "E";
-    }
-    else if (marks <= 50)
-    {
-        cout << "D";
-    }
-    else if (marks <= 60)
-    {
-        cout << "C";
-    }
-    else if (marks <= 80)
-    {
-        cout << "B";
-    }
-    else if (marks >= 80)
-    {
-        cout << "A";
-    }
 }
 */
 
 /* Take the age from the user and then decide accordingly
 1. If age < 18,
- print  nat eligible to job
+ print  not eligible to job
 2. If age >= 18,
     print eligible to job
 3. If age >= 55 and age <= 57,
@@ -69,24 +71,26 @@ int main (){
     print retirement age reached.
 
 int main (){
-    int age;
-    cin >> age;
-    if (age < 18)
+   int age;
+   cin >> age;
+   if (age < 18)
+   {
+    cout << "Not eligible to job" << endl;  
+   } 
+   else if (age <= 57)
+   {
+    cout << "Eligible to job" << endl;
+    // nested if else
+    if (age >= 55)
     {
-        cout << "Not Eligible to job";
+        cout << "Retirement soon" << endl;
     }
-    else if(age <=57)
+   }
+    else
     {
-        cout << "Eligible to job";
-        if (age >= 55)
-        {
-            cout << ", but retirement soon";
-        }
-         
+     cout << "Retirement age reached" << endl;
     }
-    else if (age > 57)
-    {
-        cout << "Retirement age reached";
-    }
+    return 0;
 }
 */
+

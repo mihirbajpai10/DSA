@@ -4,37 +4,36 @@ using namespace std;
 /*take the day no and print the corresponding day
 for 1 print Monday,
 for 2 print Tuesday and so on for 7 print Sunday.
-*/
+
 int main()
 {
     int day;
     cin >> day;
-    switch(day) {
+    switch (day){
         case 1:
-            cout << "Monday";
+            cout << "Monday ";
             break;
         case 2:
-            cout << "Tuesday";
+            cout << "Tuesday ";
             break;
         case 3:
-            cout << "Wednesday";
+            cout << "Wednesday ";
             break;
         case 4:
-            cout << "Thursday";
+            cout << "Thursday ";
             break;
         case 5:
-            cout << "Friday";
+            cout << "Friday ";
             break;
         case 6:
-            cout << "Saturday";
+            cout << "Saturday ";
             break;
         case 7:
-            cout << "Sunday";
+            cout << "Sunday ";
             break;
-        default:
-            cout << "Invalid";
-
+        default: 
+            cout << "Invalid day";
     }
-    cout << "Check";
+
     return 0;
-}
+}*/
